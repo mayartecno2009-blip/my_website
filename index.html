@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="stayle.css">
+    </head>
+
+    <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
+    <script>
+
+        function Home(){
+          document.getElementById(10).src="img1/Packages.jpg"
+        }
+        function Homeblack(){
+          document.getElementById(10).src="img1/Rblack.jpg"
+        }
+
+
+        function Haircut(){
+          document.getElementById(11).src="img1/attached.jpg"
+        }
+        function Haircutblack(){
+          document.getElementById(11).src="img1/ablack.jpg"
+        }
+
+        function Mayar(){
+          document.getElementById(12).src="img1/dogs.jpg"
+        }
+        function Mayarblack(){
+          document.getElementById(12).src="img1/dblack.jpg"
+        }
+        
+    </script>
+    <body>
+        <div class="header">
+           <script>
+            document.write(Date())
+          </script>
+          <br><br>
+      <img src="img1/11.png"  style="width: 150px ; height: 100px;" >
+
+          <h1>Loving Homes</h1> 
+          <button onclick="body.style.zoom='100%'">100+</button>
+            <button onclick="body.style.zoom='150%'">150+</button>
+            <button onclick="body.style.zoom='200%'">200+</button>
+          
+        </div>
+          <div class="topnav" id="myTopnav">
+        <a href="index.html" class="active">Home</a>
+
+        <a href="about.html">About</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+
+       <div class="dropdown"><!--عشان المرافق-->
+            <button class="dropbtn">facilities 
+            <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+            <a href="Original facilities.html">Original facilities</a>
+            <a href="Other facilities.html">Other facilities</a>
+            </div>
+        </div> 
+         <div class="dropdown"><!--عشان الحزم-->
+            <button class="dropbtn">Packages 
+            <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+            <a href="Packages.html">Original Packages</a>
+            <a href="Custom packages.html">Custom packages</a>
+            </div>
+        </div> 
+      <!--  <a href="hotels.html">Services</a>-->
+        <a href="support.html">Support</a>
+        </div>
+
+        <div class="row">
+
+         <div class="col-12 col-s-12" >
+        <img class="images" src="img1/223.jpg" style="width:100%; height: 10%;">
+        </div>
+        <div class="col-12 col-s-12">
+        <div class="istring">
+        <h1>A site for dogs</h1>
+        <p>The dog hotel's website details the services offered, packages, and other information available on the site.</p>
+        </div>
+        </div>
+        <div class="col-4 col-s-12">
+            <div class="mayar">
+               <a class="links" href="Other facilities.html">
+                <img id="10" class="img1" src="img1/Rblack.jpg" onmouseover=" Home()" onmouseout="Homeblack()" style="width: 200px ; height: 100px;">
+               </a>
+               <h1> Packages  </h1>
+            </div>
+        </div>
+
+         <div class="col-4 col-s-12">
+            <div class="mayar">
+               <a class="links" href="Original facilities.html">
+                <img id="11" class="img1" src="img1/ablack.jpg" onmouseover=" Haircut()" onmouseout="Haircutblack()" style="width: 200px ; height: 100px;">
+               </a>
+               <h1> Haircut  </h1>
+            </div>
+        </div>
+
+         <div class="col-4 col-s-12">
+            <div class="mayar">
+               <a class="links" href="Other facilities.html">
+                <img id="12" class="img1" src="img1/dblack.jpg" onmouseover="Mayar()" onmouseout="Mayarblack()" style="width: 200px ; height: 100px;">
+               </a>
+               <h1> Haircut  </h1>
+            </div>
+        </div>
+            </div>
+
+         <div class="footer">
+          <h2>Legal considerations reserved</h2>
+           <div id="result">
+           <script>
+          if (typeof(Storage) !== "undefined") {
+            if (localStorage.pagecount) {
+              localStorage.pagecount = Number(localStorage.pagecount)+1;
+            } else {
+              localStorage.pagecount = 1;
+            }
+            document.getElementById("result").innerHTML = "You have visited this page " + localStorage.pagecount + " time(s).";
+          } else {
+            document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+          }
+          </script>ٍ
+          </div>
+        </div>
+    </body>
+</html>
